@@ -1,0 +1,4 @@
+To test the code:
+
+activator clean test
+
