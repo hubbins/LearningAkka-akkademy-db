@@ -18,9 +18,6 @@ class TextDemoSpec extends FunSpecLike with Matchers with BeforeAndAfterEach {
 
         val textDemo = actorRef.underlyingActor
         textDemo.textValue should equal("Test 1")
-
-        actorRef ! SetText("Test 2")
-        textDemo.textValue should equal("Test 2")
       }
 
       it("should set another text value") {
